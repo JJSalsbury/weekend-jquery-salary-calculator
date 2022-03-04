@@ -1,0 +1,38 @@
+#colorCount {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#box1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#box2{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#box3{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#box4{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: inline-block;
+}
