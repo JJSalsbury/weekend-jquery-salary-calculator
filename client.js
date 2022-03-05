@@ -28,21 +28,28 @@ let ourEmployees = [];
 //console.log'd to show employees added.
 console.log(ourEmployees);
 
-
 //Created function to add user input into ourEmployees array.
 function addEmployee() {
     console.log('in addEmployee');
-    let firstName = $('#fName').val();
+    firstName = $('#fName').val();
 //    lastName = $('#lNameId').val(),
 //    id = $('#idId').val(),
 //    title = $('#titleId').val(),
 //    salary = $('#salaryId').val(), 
+    console.log(firstName);
     ourEmployees.push(firstName);
 //log'd to see that employees are added
     console.log(ourEmployees);
-}//end addEmployee Function
+//cleared input
+    $('#fName').val('');
+}//end add employee
 
 addEmployee();
+
+
+
+
+
 
 
 
