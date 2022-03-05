@@ -3,17 +3,62 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Color Code Pt1</title>
+    <title>Weekend Challenge 1</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Color Blocks Part 1</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+    <div id="header">
+        <header>Salary Calculator</header>
+    </div>
+    <p>Add Employee</p>
+    <!-- <input type="text" placeholder="New Party Guest" id="newGuest"> -->
+    <input type="text" placeholder="First Name" id="fName">
+    <input type="text" placeholder="Last Name" id="lNameId">
+    <input type="text" placeholder="ID" id="idId">
+    <input type="text" placeholder="Title" id="titleId">
+    <input type="text" placeholder="Annual Salary" id="salaryId">
+    <button id="submit">Submit</button>
+    <div class="form-floating mb-3">
+        <input class="form-control" type="text" placeholder="thing" id="itemInput">
+        <label for="itemInput">New Item</label>
+    </div>
+    <main id="Employees">
+        <!-- //table goes here// -->
+        <table class="table table-striped">
+            <thead>
+                <!-- THESE ARE THE COLUMNS -->
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Annual Salary</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!-- THESE ARE THE ROWS -->
+                <tr>
+                    <td>JJ</td>
+                    <td>40</td>
+                    <td>1234</td>
+                    <td>student</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Matt</td>
+                    <td>35</td>
+                </tr>
+            </tbody>
+    </main>
+
+
 </body>
+
 </html>
