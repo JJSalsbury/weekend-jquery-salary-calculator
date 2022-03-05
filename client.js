@@ -5,8 +5,8 @@ $(document).ready(handleReady);
 
 function handleReady() {
     console.log('DOM/jquery loaded!');
-     $('#submit').on('click', handleClick);
-     $('#submit').on('click', addEmployee);
+     $('#submitBtn').on('click', handleClick);
+     $('#submitBtn').on('click', addEmployee);
 
 }
 
@@ -25,27 +25,57 @@ function handleClick() {
 // //created a global variable to collect all information in an array
 let ourEmployees = [];
 
-//console.log'd to show employees added.
-console.log(ourEmployees);
-
 //Created function to add user input into ourEmployees array.
 function addEmployee() {
     console.log('in addEmployee');
-    firstName = $('#fName').val();
-//    lastName = $('#lNameId').val(),
-//    id = $('#idId').val(),
-//    title = $('#titleId').val(),
-//    salary = $('#salaryId').val(), 
-    console.log(firstName);
-    ourEmployees.push(firstName);
-//log'd to see that employees are added
-    console.log(ourEmployees);
+    let firstName = $('#fNameId').val();
+    let lastName = $('#lNameId').val();
+    let id = $('#idId').val();
+    let title = $('#titleId').val();
+    let salary = $('#salaryId').val();
+
+    const employeeObj = {
+        firstName: firstName,
+        lastName: lastName,
+        id: id,
+        title: title,
+        salary: salary, 
+    }
+
+ourEmployees.push(employeeObj);
+displayEmployees();
 //cleared input
-    $('#fName').val('');
+$(`input`).val('');
+    // $('#fNameId').val('');
+    // $('#lNameId').val('');
+    // $('#idId').val('');
+    // $('#titleId').val('');
+    // $('#salaryId').val('');
+
+//log'd to see that employees are added
+console.log('Number of Employees:', ourEmployees.length);
+console.log(ourEmployees);
 }//end add employee
 
-addEmployee();
+//called the function
+// addEmployee();
 
+//created function to display cars added to garage.
+function displayEmployees () {
+    for ( let employee of ourEmployees){
+        $( '#employeeListId' ).append(`
+        
+        <tr>
+            <td>${employee.firstName}</td> 
+            <td>${employee.lastName}</td>
+            <td>${employee.id}</td>  
+            <td>${employee.title}</td>  
+            <td>${employee.salary}</td>
+        </tr>
+            
+            `)
+    }  
+}//end function
 
 
 
