@@ -7,37 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+</head>
 
 <body>
+    <div id="img">
+    </div>
     <div id="header">
         <header>Salary Calculator</header>
     </div>
     <p>Add Employee</p>
-    <input type="text"  id="fNameId" placeholder="First Name">
+    <input type="text" id="fNameId" placeholder="First Name">
     <input type="text" id="lNameId" placeholder="Last Name">
-    <input type="number"  id="idId" placeholder="ID">
+    <input type="number" id="idId" placeholder="ID">
     <input type="text" id="titleId" placeholder="Title">
     <input type="number" id="salaryId" placeholder="Annual Salary">
     <button id="submitBtn">Submit</button>
-      <div class="monthlySalary">
-        <p>Total Monthly Salary Cost: $<span id="salaryTrackerId">0.00</span></p>
-      </div>
     <main id="Employees">
         <!-- //table goes here// -->
-        <table class="">
+        <table class="table table-hover">
             <thead>
                 <!-- THESE ARE THE COLUMNS -->
                 <tr>
                     <th>First Name</th>
-                    <th></th>Last Name</th>
+                    <th>Last Name</th>
                     <th>ID</th>
                     <th>Title</th>
                     <th>Annual Salary</th>
-                    
                 </tr>
             </thead>
             <tbody id="employeeListId" class="employeeList">
@@ -47,16 +47,12 @@
                     <td>Salsbury</td>
                     <td>1234</td>
                     <td>student</td>
-                    <td>80000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
+                    <td>0</td>
                 </tr>
             </tbody>
     </main>
-
-
 </body>
-
+<div class="monthlySalary">
+    <p>Total Monthly Salary Cost: $<span id="salaryTrackerId">0.00</span></p>
+</div>
 </html>
