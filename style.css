@@ -1,3 +1,57 @@
+body {
+    background-image: url(../weekend-jquery-salary-calculator/istockphoto-146816349-1024x1024.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#employeeListId {
+font-family: courier;
+}
+
+#calcTitleId {
+font-family: courier;
+font-size: xx-large;
+}
+
+#tableHeadId {
+font-family: courier;
+font-size: large;
+
+}
+
+#salaryTrackerId {
+font-family: courier;
+font-size: xx-large; 
+}
+
+#monthlyCostId {
+font-family: courier;
+font-size: xx-large;
+margin-bottom: 35px; 
+}
+
+#myHeaderId {
+        /* text-size-adjust: 25px; */
+background-color: beige;
+text-align: center;
+border: 5px solid black;
+}
+
+#addEmployeesId {
+font-size: medium;
+}
+
+#inputItemsId {
+font-family: courier;
+background-color: gray;
+margin: auto;
+width: auto;
+border: 5px solid black;
+padding: 10px;
+color: black;
+margin-bottom: 50px;
+}
+
 .warning {
     background-color: red;
     /* display: flex;

@@ -15,22 +15,26 @@
 </head>
 
 <body>
-    <div id="img">
+    <header id="myHeaderId">
+    <div id="calcTitleId">
+        <h1>Salary Calculator</h1>
+    </div> 
+    <div id="inputItemsId">
+    <div id="addEmployeesId">
+        <h1>Add Employees</h1>
     </div>
-    <div id="header">
-        <header>Salary Calculator</header>
-    </div>
-    <p>Add Employee</p>
     <input type="text" id="fNameId" placeholder="First Name">
     <input type="text" id="lNameId" placeholder="Last Name">
     <input type="number" id="idId" placeholder="ID">
     <input type="text" id="titleId" placeholder="Title">
     <input type="number" id="salaryId" placeholder="Annual Salary">
     <button id="submitBtn">Submit</button>
+    </div>
+
     <main id="Employees">
         <!-- //table goes here// -->
         <table class="table table-hover">
-            <thead>
+            <thead id="tableHeadId">
                 <!-- THESE ARE THE COLUMNS -->
                 <tr>
                     <th>First Name</th>
@@ -40,19 +44,20 @@
                     <th>Annual Salary</th>
                 </tr>
             </thead>
-            <tbody id="employeeListId" class="employeeList">
+            <tbody id="employeeListId">
                 <!-- THESE ARE THE ROWS -->
                 <tr>
-                    <td>JJ</td>
-                    <td>Salsbury</td>
-                    <td>1234</td>
-                    <td>student</td>
-                    <td>0</td>
+                    <td>Employee<br>First Name</td>
+                    <td>Employee<br>Last Name</td>
+                    <td>Employee<br>ID number</td>
+                    <td>Employee<br>Job Title</td>
+                    <td>Annual Salary<br>(whole dollar amount, no commas or decimals. ex- 75000)</td>
                 </tr>
             </tbody>
     </main>
 </body>
-<div class="monthlySalary">
-    <p>Total Monthly Salary Cost: $<span id="salaryTrackerId">0.00</span></p>
-</div>
+
+    <p id="monthlyCostId">Total Monthly Salary Cost: $<span id="salaryTrackerId">0.00</span></p>
+
+
 </html>
