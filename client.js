@@ -17,8 +17,9 @@ function handleReady() {
 
 //Created handleClick function to manage my click events.
 function handleClick() {
-    console.log('clicked!');
-}
+//Log'd to show operability in console.
+console.log('clicked!');
+}//end handClick function
 
 //Created a global variable to collect employee input data in an array.
 let ourEmployees = [];

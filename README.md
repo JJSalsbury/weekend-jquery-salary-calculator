@@ -2,7 +2,7 @@
 Weekend Jquery Salary Calculator
 
 ## Description
-_Duration: Weekend Homework Assignment_
+_Duration: Weekend Homework Assignment (Thurs-Fri)_
 
 I created an application that collects _employee first name, last name, ID number, job title, annual salary_ and tracks a monthly salary budget based on annual salary for all employees.
 
